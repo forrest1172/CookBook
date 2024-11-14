@@ -1,10 +1,10 @@
 # CookBook
 A simple cookbook web app for my wife
 ## Tech
-- ### client
+### client
 - html
 - css
 - javascript
-- ### Server
+### Server
 - python3
 - flask
