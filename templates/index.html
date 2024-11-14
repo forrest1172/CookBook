@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <title>Recipe Maker</title>
+  </head>
+  <body>
+    <header>
+      <h1>Recipe Maker</h1>
+    </header>
+    <div id="grid-container">
+      <section id="info">
+        <h2>Name of Recipe</h2>
+        <input type="text" placeholder="Recipe Name" />
+        <h2>Prep Time</h2>
+          <input class="prepTime" type="text" placeholder="(Mins)" />
+        <h2>Cook Time</h2>
+          <input class="cookTime" type="text" placeholder="(Mins)" />
+      </section>
+      <section id="instructBlock">
+          <h2>Instructions</h2>
+          <button type="button" class="Btn" onclick="NewInstruction()">
+            <div class="sign">+</div>
+            <div class="text">Add</div>
+          </button>
+          <button type="button" class="Btn" onclick="DeleteLastStruct()">
+            <div class="sign">-</div>
+            <div class="text">Delete</div>
+          </button>
+          <form action="{{ url_for('my_form') }}" method='POST'>
+              <ol name="instruct[]" id="instructions">
+              </ol>
+            <button type="submit" class="btn">submit</button>
+          </form>
+          
+      </section>
+      <section id="ingredBlock">
+        <h2>Ingredients</h2>
+        <button type="button" class="Btn" onclick="NewIngredient()">
+            <div class="sign">+</div>
+            <div class="text">Add</div>
+          </button>
+          <button type="button" class="Btn" onclick="DeleteLastIngred()">
+            <div class="sign">-</div>
+            <div class="text">Delete</div>
+          </button>
+        <ul id="ingredients"></ul>
+      </section>
+      
+    </div>
+  </body>
+  <script src="{{ url_for('static',filename='app.js') }}"> </script>
+</html>

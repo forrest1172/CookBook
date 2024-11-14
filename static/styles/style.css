@@ -1,0 +1,108 @@
+body {
+  background-color: #323939;
+}
+input {
+  background-color: #34B4B9 ;
+  height: 1.5rem;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+}
+#grid-container{
+  display: grid;
+  grid-template-areas:
+  "name name name"
+  "info ingred instruct";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px;
+}
+.prepTime {
+  grid-area: prep;
+  border-radius: 10px;
+  width: 4.5rem;
+}
+#info{
+  grid-area: info;
+}
+.Btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: black;
+}
+
+/* plus sign */
+.sign {
+  width: 100%;
+  font-size: 2em;
+  color: white;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* text */
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 500;
+  transition-duration: .3s;
+}
+/* hover effect on button width */
+.Btn:hover {
+  width: 125px;
+  border-radius: 0px;
+  transition-duration: .3s;
+}
+
+.Btn:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 20px;
+}
+/* hover effect button's text */
+.Btn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 5px;
+}
+/* button click effect*/
+.Btn:active {
+  transform: translate(2px ,2px);
+}
+
+h1 {
+  grid-area: name;
+  text-align: center;
+  color: #fdfdfd;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,255,0,0))
+}
+h2 {
+  color: #F9F7F7;
+  font-size: 50px;
+}
+li::marker {
+  color: #000000;
+}
+#instructBlock {
+  grid-area: instruct;
+  background-color: red;
+}
+#ingredBlock{
+  grid-area: ingred;
+  background-color: purple;
+}
