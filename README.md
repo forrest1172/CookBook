@@ -2,7 +2,7 @@
 A simple cookbook web app for my wife
 ## Tech
 ### client
-- html ![html](![image](https://github.com/user-attachments/assets/012897b5-88fd-43ed-9532-1dee78aaeed7))
+- html ![html](https://github.com/user-attachments/assets/012897b5-88fd-43ed-9532-1dee78aaeed7)
 - css
 - javascript
 ### Server
