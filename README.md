@@ -8,3 +8,5 @@ A simple cookbook web app for my wife
 ### Server
 - python3
 - flask
+## Why not node.js?
+the webApp is hosted locally on my raspberry pi and can be accessed over the local network \n my next webapp will be made with node
