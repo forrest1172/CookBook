@@ -2,9 +2,9 @@
 A simple cookbook web app for my wife
 ## Tech
 ### client
-- html ![html](https://github.com/user-attachments/assets/012897b5-88fd-43ed-9532-1dee78aaeed7)
-- css
-- javascript
+- ![html](https://github.com/user-attachments/assets/012897b5-88fd-43ed-9532-1dee78aaeed7)
+- ![JS](https://github.com/user-attachments/assets/78999db8-6b87-479b-a043-60ef7d591754)
+- ![css](https://github.com/user-attachments/assets/72e3d53f-dc46-4367-b920-7dc2cd0c610e)
 ### Server
 - python3
 - flask
